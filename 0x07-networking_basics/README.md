@@ -1,0 +1,16 @@
+<p align="center">
+    <a href=#><img src="https://raw.githubusercontent.com/jbocane6/logos/main/holberton-logo.png" alt="holberton" /></a></p>
+
+
+# 0x07. Networking basics #0
+
+General
+- Allowed editors: vi, vim, emacs
+- All your files will be interpreted on Ubuntu 20.04 LTS
+- All your files should end with a new line
+- A README.md file, at the root of the folder of the project, is mandatory
+- All your Bash script files must be executable
+- The first line of all your Bash scripts should be exactly #!/usr/bin/env ruby
+- All your regex must be built for the Oniguruma library
+
+# Performed by Carlos Matallana.
