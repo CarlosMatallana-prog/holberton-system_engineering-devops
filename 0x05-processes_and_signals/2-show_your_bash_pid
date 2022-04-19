@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# displays a list of currently precede by bash
+ps -axfu | grep "bash"
