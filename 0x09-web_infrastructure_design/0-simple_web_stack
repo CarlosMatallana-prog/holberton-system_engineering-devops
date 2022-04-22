@@ -1,1 +1,15 @@
-https://imgur.com/a/I27GBR6
+#!/usr/bin/env bash
+# Configuring a server with specification XYZ
+# PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY
+# scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
+
+pathfile=$1
+ip=$2
+username=$3
+pathprivate=$4
+
+if [ $# -lt 4 ]; then
+  echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+else
+  scp -i "$pathprivate" -o StrictHostKeyChecking=no "$pathfile" "$username"@"$ip":~/
+fi
