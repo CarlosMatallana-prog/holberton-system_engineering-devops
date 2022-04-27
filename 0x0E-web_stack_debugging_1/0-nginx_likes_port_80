@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#fix command
+service sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+sudo service nginx restar
