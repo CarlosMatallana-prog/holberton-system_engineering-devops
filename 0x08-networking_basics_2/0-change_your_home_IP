@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script that configures an Ubuntu server with the below requirements.
+
+sudo cp -f /etc/hosts ~/hosts.backup
+sudo sed -i 's/.*[0-9]*localhost/127.0.0.2\tlocalhost/' ~/hosts.backup
+sudo sed -i '/.*[0-9]*facebook.com/d' ~/hosts.backup
+sudo sed -i '$ a 8.8.8.8\tfacebook.com' ~/hosts.backup
+sudo cp -f ~/hosts.backup /etc/hosts
